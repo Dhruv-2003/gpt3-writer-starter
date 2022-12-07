@@ -8,6 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
   "Explain what this Solidity Smart contract code is doing as explaining to Grandma";
+
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`);
